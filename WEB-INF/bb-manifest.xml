@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<plugin>
+		<name value="Bb Server Info"/>
+		<description value="Bb Server Info"/>
+		<handle value="BBserverinfo"/>
+		<version value="1.0.2"/>
+		<requires>
+			<bbversion value="8.0.0"/>
+		</requires>
+		<vendor>
+			<id value="cmu"/>
+			<name value="Central Michigan University"/>
+			<url value="http://www.cmich.edu"/>
+			<description value=""/>
+		</vendor>
+		
+		<http-actions>
+		<config value=""/>
+		<remove value=""/>
+		</http-actions>
+		
+		<application-defs>
+		<application handle="BBServerinfo-module" type="shared" use-ssl="false" name="Bb Server Info">
+		<description lang="en_US">Shows the user which front-end server they are attached to.</description>
+		<links>
+		<link>
+		<type value="user_tool"/>
+		<name value="Bb Server Info"/>
+		<url value="module/tool.jsp"/>
+		<description value="Shows user which server they are attached to"/>
+		<icons>
+			<listitem value="module/icon.gif" />
+		</icons>
+		</link>
+		</links>
+		</application>
+		</application-defs>
+		
+		<permissions>
+		<permission type="attribute" name="user.personalinfo" actions="get" />
+		</permissions>
+		</plugin>
+		</manifest>
+		
+				
