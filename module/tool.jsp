@@ -1,5 +1,5 @@
 <%@ taglib uri="/bbData" prefix="bbData" %>
-<%@ taglib uri="/bbUI" prefix="bbUI" %>
+<%@ taglib uri="/bbNG" prefix="bbNG" %>
 
 <%@ page import="blackboard.platform.config.BbConfig,
 	blackboard.platform.config.ConfigurationServiceFactory"
@@ -13,13 +13,10 @@
 %>
 
 <bbData:context>
-<bbUI:docTemplate title="<%= page_title %>">
-<bbUI:breadcrumbBar>
-<bbUI:breadcrumb>Blackboard Server Number</bbUI:breadcrumb>
-</bbUI:breadcrumbBar>
-<bbUI:titleBar iconUrl="<%=iconUrl%>">
-	<%= page_title %>
-</bbUI:titleBar>
+<bbNG:genericPage>
+<bbNG:breadcrumbBar>
+<bbNG:breadcrumb>Blackboard Server Number</bbNG:breadcrumb>
+</bbNG:breadcrumbBar>
 
 <p>You are connected to <strong><span style="text-transform: uppercase"><%= machinename %></span></strong>.</p>
 
@@ -29,5 +26,5 @@
 <input type="submit" class="button" name="Back" value="Back" tabindex="3" />
 </form>
 
-</bbUI:docTemplate>
+</bbNG:genericPage>
 </bbData:context> 
